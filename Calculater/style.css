@@ -1,0 +1,191 @@
+* {
+    font-family: "League Spartan", sans-serif;
+    padding: 0px;
+}
+.main_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+h5{
+    color: white;
+}
+.theme-toggle label{
+    color: white;
+}
+body {
+    background-color: hsl(222, 26%, 31%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 100px;
+    gap: 20px;
+    padding-top: 80px;
+}
+.container2 {
+    height: 110px;
+    background-color: hsl(224, 36%, 15%);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-radius: 8px;
+}
+#display {
+    text-align: end;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 36%, 15%);
+    border: none;
+    font-size: 50px;
+    font-weight: 700;
+    padding-right: 10px;
+}
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container1 h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: hsl(0, 0%, 100%);
+   
+}
+#display:active {
+    border: none;
+    outline: none;
+}
+#display:focus {
+    border: none;
+    outline: none;
+}
+.main_container {
+    max-width: 460px;
+    overflow: hidden;
+}
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 8px;
+}
+#num_opres,
+#num_opequ {
+    grid-column: span 2;
+}
+.number-btn,.delet_btn {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border: 0;
+    background-color: hsl(30, 25%, 89%);
+    transition: all 0.3s ease;
+    box-shadow: hsl(28, 16%, 65%) 0px 4px 0px 0px;
+    color: hsl(221, 14%, 31%);
+    cursor: pointer;
+    font-size: 30px;
+
+}
+.number-btn:hover {
+    box-shadow: hsl(28, 16%, 65%) 0px 7px 0px 0px;
+}
+.number-btn:active {
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: hsl(28, 16%, 65%) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+}
+.delet_btn, #num_opres{
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: hsl(224, 28%, 35%) 0px 4px 0px 0px;
+    color: hsl(0, 0%, 100%);
+    font-size: 22px;
+}
+.delet_btn:hover {
+    box-shadow: hsl(224, 28%, 35%) 0px 7px 0px 0px;
+}
+
+#num_opres:hover {
+    box-shadow: hsl(224, 28%, 35%) 0px 7px 0px 0px;
+}
+.delet_btn:active {
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: hsl(224, 28%, 35%) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+}
+#num_opres:active {
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: hsl(224, 28%, 35%) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+}
+#num_opequ {
+    background-color: hsl(6, 63%, 50%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: hsl(6, 70%, 34%) 0px 4px 0px 0px;
+}
+#num_opequ:hover {
+    box-shadow: hsl(6, 70%, 34%) 0px 7px 0px 0px;
+}
+
+#num_opequ:active {
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: hsl(6, 70%, 34%) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+}
+#mul_btn {
+    font-size: 18px;
+}
+body.theme1 {
+    background-color: hsl(222, 26%, 31%);
+    color: white;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .main_container {
+        width: 90%;
+    }
+
+    .container2 {
+        height: 90px;
+    }
+
+    #display {
+        font-size: 30px;
+    }
+
+    .number-btn, .delets_btn {
+        font-size: 24px;
+        padding: 8px 0;
+    }
+
+    .container3 {
+        gap: 10px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main_container{
+        width: 300px;
+    }
+    .container2{
+        height: 90px;
+    }
+}
+
+
